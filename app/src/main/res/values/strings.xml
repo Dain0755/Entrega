@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Billetera</string>
+    <string name="tv_Registros">Registros</string>
+    <string name="tv_valor">Valor</string>
+    <string name="tv_Gasto_inncesario">Gasto</string>
+    <string name="tv_fecha">26/05/2022</string>
+    <string name="hint_valor">Valor...</string>
+    <string name="hint_Detalle">Salchipapas, cerveza, licor, cine...</string>
+    <string name="Criterio">¿La compra realizada era absolutamente necesaria?</string>
+    <string name="Edit_text_Salario">Ingrese su salario neto mensual:</string>
+    <string name="Edit_text_SalarioElegido">Aquí tu salario</string>
+    <string name="mensajeInsertar">GASTA CONSCIENTEMENTE TU DINERO, EVITA MOLESTAR A LOS DEMAS</string>
+    <string name="DatoNo">Para nada</string>
+    <string name="DatoSi">Absolutamente</string>
+    <string name="BTN_guardar">Guardar</string>
+    <string name="btn_registrar">Registrar</string>
+</resources>

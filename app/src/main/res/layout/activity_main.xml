@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="#FAF6F6"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_Registros"
+            android:layout_gravity="center_vertical"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/teal_200"
+            />
+        <Space
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp">
+
+        </Space>
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/dinero2"
+
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <EditText
+                android:id="@+id/Registro_salario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/Edit_text_Salario"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="17dp"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/TV_SalarioFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/Edit_text_SalarioElegido"
+                >
+
+            </TextView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/Btn_Guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/BTN_guardar"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:backgroundTint="@color/black">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FAF6F6"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/valor"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:padding="5dp"
+                            android:text="@string/tv_valor"
+                            android:textColor="@color/black"
+                            android:textSize="18dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/titulo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/valor"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:padding="5dp"
+                            android:text="Detalle Gasto realizado"
+                            android:textColor="@color/black"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_fecha"
+                            android:layout_width="68dp"
+                            android:layout_height="25dp"
+                            android:layout_below="@+id/star"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:text="@string/tv_fecha"
+                            android:textColor="#444B4C"
+                            android:textSize="10dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/star"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="3dp"
+                            android:padding="5dp"
+                            android:src="@drawable/recorte">
+
+                        </ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/Btn_Nuevo"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/plus">
+
+    </ImageButton>
+</LinearLayout>
